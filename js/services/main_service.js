@@ -5,9 +5,3 @@ app.service('Board', ['$http', function($http){
   }
 
 }])
-
-// app.service('Interval', ['$interval', function ($interval) {
-//   this.callAtInterval = function () {
-//     console.log("this is the interval");
-//   }
-// }])

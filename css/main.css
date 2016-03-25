@@ -10,6 +10,13 @@
   border:1px solid black;
   margin: 5px;
   border-radius: 10px 10px 10px 10px;
+  height: 200px;
+  width: 400px;
+  float:left;
+}
+
+.titleContainer{
+  /*background-color: red;*/
 }
 
 .profileImage{

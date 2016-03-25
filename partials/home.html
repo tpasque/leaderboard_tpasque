@@ -1,10 +1,11 @@
-<p>you are on the home page</p>
+<p>Total Atheletes: {{totalAtheletes}}</p>
 
 
 <div class="indResultsContainer" ng-repeat="result in results">
-  <img class="profileImage" src="{{result.profileImg}}" alt="image not found">
-  <p>Athlete:{{result.userFirstName}} {{result.userLastName}}</p>
+  <div class="titleContainer">
+    <img class="profileImage" src="{{result.profileImg}}" alt="image not found">
+    <p class="atheleteName">Athlete:{{result.userFirstName}} {{result.userLastName}}</p>
+  </div>
   <p class="rank">Rank: {{result.avgRank}}</p>
-  <p class="initials">{{result.initials}}</p>
   <p>Tests: {{result.tests[0]}}</p>
 </div>
