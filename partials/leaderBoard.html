@@ -1,0 +1,18 @@
+<p class="totalAthletes">Total Atheletes: {{totalAthletes}}</p>
+
+  <div class="indResultsContainer" ng-repeat="result in results">
+    <div class="titleContainer">
+      <img class="profileImage" src="{{result.profileImg}}" alt="image not found">
+      <p class="atheleteName">{{result.userFirstName}} {{result.userLastName}}</p>
+    </div>
+
+    <p class="rank">{{result.avgRank}}</p>
+    <p class="rankText">RANK of {{totalAthletes}}</p>
+    <div class="testsContainer">
+      <p class="testsText">&#9998 Tests:</p>
+      <ul>
+        <li class="tests">{{result.tests[0]}}</li>
+      </ul>
+    </div>
+  </div>
+</div>

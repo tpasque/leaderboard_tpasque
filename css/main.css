@@ -1,26 +1,99 @@
-.headerTitle{
-  color:#4B94C3;
+.logo{
+  height:14vh;
+  width: 8vw;
+  position: relative;
+  left: 2vw;
+  top: 0.5vh;
 }
 
 .navbar{
   background-color: #20242A;
+  height:12vh;
+}
+
+.container-fluid{
+  position: relative;
+  left: 2vw;
+  top: 3vh;
+}
+
+.navbar-brand{
+  font-size: 1.3em;
+
+}
+
+
+.totalAthletes{
+  position: relative;
+  left: 6vw;
+  color: #20232A;
+  font-size: 2.0em;
+  font-weight: 100;
 }
 
 .indResultsContainer{
-  border:1px solid black;
-  margin: 5px;
-  border-radius: 10px 10px 10px 10px;
-  height: 200px;
-  width: 400px;
+  border: 2.25px solid #777777;
+  margin: 1vw;
+  /*border-radius: 10px 10px 10px 10px;*/
+  height: 20vh;
+  width: 40vw;
+  float: left;
+  position: relative;
+  left: 8vw;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+
+.titleContainer img{
+  float:left;
+  position: relative;
+  left: 0.5vw;
+  top: 0.5vh;
+  height: 7vh;
+  width: 7vh;
+  border-radius: 50%;
+}
+
+.titleContainer p{
+  position: relative;
+  left: 1.25vw;
+  top: 1.75vh;
+  font-size: 1.8em;
+  font-weight: 100;
+}
+
+.rank{
+  position: relative;
+  top: 2vh;
+  left: 2vw;
+  font-size: 3.5em;
+  font-weight: 100;
+
+}
+
+.rankText{
+  position: relative;
+  left: 5vw;
+  font-size: 1.3em;
+  font-weight: 100;
   float:left;
 }
 
-.titleContainer{
-  /*background-color: red;*/
+
+.testsContainer p{
+  position: relative;
+  left: 20vw;
+  top: -5vh;
+  font-size: 1.3em;
+  font-weight: 100;
+  width: 40%;
 }
 
-.profileImage{
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
+.testsContainer li{
+  position: relative;
+  left: 25vw;
+  top: -5vh;
+  font-size: 1.3em;
+  font-weight: 100;
+  width: 40%;
 }
