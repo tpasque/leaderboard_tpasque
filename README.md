@@ -3,7 +3,10 @@ Custom built leaderboard option for TrainHeroic Code Challenge.
 
 This is my take on a leaderboard from the data object provided in the code challenge.
 
-A leaderboard should be clear and concise with visually pleasing UI/UX to engage the users.  The leaderboard should display 5-10 athletes at a time and then interval through to the next set of athletes, based on rank.
+A leaderboard should be clear and concise with visually pleasing UI/UX to engage the users.  The leaderboard should display 6 athletes at a time and then interval through to the next set of athletes, based on rank.  The leaderboard cycles every 7 seconds (including the very first load on the page, so please excuse the first delay - past this, it will render as expected).
+
+#Deployed URL
+https://leaderboardtpasque.firebaseapp.com/#/
 
 #Deploying on local machine and local environment
 
