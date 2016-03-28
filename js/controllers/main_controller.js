@@ -6,14 +6,12 @@ app.controller('MainController', ['$scope', '$interval', 'Board', '$timeout', fu
 
         $scope.getStats = function() {
           Board.results().then(function (results) {
-            console.log("first scope inc_value "+$scope.inc_value);
             $scope.totalAthletes = results.data.results.length
             $scope.results = results.data.results
             var athleteCount = results.data.results.length
 
             //find the upper limit for the loop of the current results
             var remainder = athleteCount % 10
-            console.log("remainder is"+remainder);
 
             //var lowerHigh gives the loop an upper constraint
             var lowerHigh = athleteCount - remainder
@@ -22,10 +20,10 @@ app.controller('MainController', ['$scope', '$interval', 'Board', '$timeout', fu
 
             if ($scope.inc_value == 0){
               start = 0;
-              bumpValue = 10;
+              bumpValue = 6;
             } else if ($scope.inc_value > 0 && $scope.inc_value < lowerHigh) {
               start = $scope.inc_value
-              bumpValue = 10;
+              bumpValue = 6;
             } else{
               start = athleteCount - remainder
               bumpValue = remainder
@@ -47,7 +45,7 @@ app.controller('MainController', ['$scope', '$interval', 'Board', '$timeout', fu
           })
         }
 
-        $interval( function(){ $scope.getStats(); }, 5000);
+        $interval( function(){ $scope.getStats(); }, 7000);
 
       })
 

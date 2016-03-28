@@ -34,7 +34,6 @@
 .animate-repeat{
   border: 2.25px solid #777777;
   margin: 1vw;
-  /*border-radius: 10px 10px 10px 10px;*/
   height: 20vh;
   width: 40vw;
   float: left;
@@ -42,7 +41,6 @@
   left: 8vw;
   box-shadow: 0 8px 6px -6px black;
 }
-
 
 .animate-repeat.ng-move,
 .animate-repeat.ng-enter,
@@ -61,8 +59,8 @@
 .animate-repeat.ng-leave,
 .animate-repeat.ng-move.ng-move-active,
 .animate-repeat.ng-enter.ng-enter-active {
-  opacity:1;
-  max-height:40px;
+  opacity:1.0;
+  max-height:250px;
 }
 
 
@@ -113,7 +111,7 @@
 
 .testsContainer li{
   position: relative;
-  left: 25vw;
+  left: 27vw;
   top: -5vh;
   font-size: 1.3em;
   font-weight: 100;
