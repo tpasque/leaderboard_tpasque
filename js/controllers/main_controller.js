@@ -1,41 +1,50 @@
 
 app.controller('MainController', ['$scope', '$interval', 'Board', '$timeout', function($scope, $interval, Board, $timeout){
-      // $scope.getStats()
-
       $timeout(function () {
-
-        Board.results().then(function (results) {
-          $scope.totalAthletes = results.data.results.length
-          $scope.results = results.data.results
-          console.log($scope.results);
-        })
 
         $scope.inc_value = 0 ;
 
         $scope.getStats = function() {
           Board.results().then(function (results) {
-            $scope.totalAtheletes = results.data.results.length
+            console.log("first scope inc_value "+$scope.inc_value);
+            $scope.totalAthletes = results.data.results.length
+            $scope.results = results.data.results
+            var athleteCount = results.data.results.length
 
+            //find the upper limit for the loop of the current results
+            var remainder = athleteCount % 10
+            console.log("remainder is"+remainder);
+
+            //var lowerHigh gives the loop an upper constraint
+            var lowerHigh = athleteCount - remainder
+            var bumpValue;
+            var start = $scope.inc_value;
+
+            if ($scope.inc_value == 0){
+              start = 0;
+              bumpValue = 10;
+            } else if ($scope.inc_value > 0 && $scope.inc_value < lowerHigh) {
+              start = $scope.inc_value
+              bumpValue = 10;
+            } else{
+              start = athleteCount - remainder
+              bumpValue = remainder
+            }
+            $scope.totalAthletes = results.data.results.length
             var stats = results.data.results
-            var atheleteCount = results.data.results.length
             $scope.results = results.data.results
             $scope.results = []
+            $scope.inc_value += bumpValue;
 
-            var start = $scope.inc_value;
-            var end = (start + 10)
+            // start = $scope.inc_value;
+            var end = (start + bumpValue)
             for (var i = start; i < end; i++) {
               $scope.results.push(stats[i])
-              console.log($scope.results);
             }
-
-            console.log($scope.results);
-            $scope.inc_value += 10;
-            // if ($scope.inc_value )
-            console.log("my inc value is"+$scope.inc_value);
+            if ($scope.inc_value >= athleteCount){
+               $scope.inc_value  = 0 ;
+            }
           })
-
-          console.log("$scope.getStats - Interval occurred");
-
         }
 
         $interval( function(){ $scope.getStats(); }, 5000);
