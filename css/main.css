@@ -1,6 +1,13 @@
+html{
+  height: 95%;
+  width: 95%;
+  position: relative;
+  left:2.5vw;
+
+}
 .logo{
-  height:14vh;
-  width: 8vw;
+  height:10vh;
+  width: 6vw;
   position: relative;
   left: 2vw;
   top: 0.5vh;
@@ -8,7 +15,7 @@
 
 .navbar{
   background-color: #20242A;
-  height:12vh;
+  height:10vh;
 }
 
 .container-fluid{
@@ -19,9 +26,7 @@
 
 .navbar-brand{
   font-size: 1.3em;
-
 }
-
 
 .totalAthletes{
   position: relative;
@@ -45,8 +50,8 @@
 .animate-repeat.ng-move,
 .animate-repeat.ng-enter,
 .animate-repeat.ng-leave {
-  -webkit-transition:all linear 1.0s;
-  transition:all linear 0.5s;
+  -webkit-transition:all linear 1.5s;
+  transition:all linear 1.0s;
 }
 
 .animate-repeat.ng-leave.ng-leave-active,
@@ -63,7 +68,6 @@
   max-height:250px;
 }
 
-
 .titleContainer img{
   float:left;
   position: relative;
@@ -76,15 +80,15 @@
 
 .titleContainer p{
   position: relative;
-  left: 1.25vw;
-  top: 1.75vh;
-  font-size: 1.8em;
+  left: 1.20vw;
+  top: 1.70vh;
+  font-size: 1.5em;
   font-weight: 100;
 }
 
 .rank{
   position: relative;
-  top: 2vh;
+  top: 1vh;
   left: 2vw;
   font-size: 3.5em;
   font-weight: 100;
@@ -99,11 +103,10 @@
   float:left;
 }
 
-
 .testsContainer p{
   position: relative;
   left: 20vw;
-  top: -5vh;
+  top: -12vh;
   font-size: 1.3em;
   font-weight: 100;
   width: 40%;
@@ -112,7 +115,7 @@
 .testsContainer li{
   position: relative;
   left: 27vw;
-  top: -5vh;
+  top: -12vh;
   font-size: 1.3em;
   font-weight: 100;
   width: 40%;
