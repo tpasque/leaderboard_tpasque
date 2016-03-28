@@ -1,5 +1,5 @@
 
-var app = angular.module('myLeaderBoard', ['ngRoute'])
+var app = angular.module('myLeaderBoard', ['ngRoute', 'ngAnimate'])
 
 		app.config(function($routeProvider) {
 			$routeProvider
