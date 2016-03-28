@@ -105,7 +105,7 @@ html{
 
 .testsContainer p{
   position: relative;
-  left: 20vw;
+  left: 16vw;
   top: -12vh;
   font-size: 1.3em;
   font-weight: 100;
@@ -114,7 +114,7 @@ html{
 
 .testsContainer li{
   position: relative;
-  left: 27vw;
+  left: 23vw;
   top: -12vh;
   font-size: 1.3em;
   font-weight: 100;
